@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #FFE53B;
+            background-image: linear-gradient(90deg, #FFE53B 0%, #FF2525 74%);
+        }
+        .form{
+            margin-left: 40%;
+            margin-top: 10%;
+        }
+        input{
+            width: 250px;
+            height: 45px;
+            background-color: black;
+            color: aliceblue;
+            font-size: 14px;
+            font-weight: bold;
+            border-radius: 10px;
+            border: #fff 3px solid;
+        }
+        .submit{
+            cursor: pointer;
+            transition: 1s;
+        }
+        .submit:hover{
+            background-color: #FF2525;
+            color: #fff;
+            border: #FFE53B 3px solid;
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+
+        <input type="text" placeholder="Username"><br></br>
+        
+        <input type="password" name="password" id="pw" placeholder="Input password"><br></br>
+
+        <input type="password" name="confirm" id="CPW" placeholder="Confirm Password"><br></br>
+
+        <input type="submit" value="Submit" class="submit" onclick="Check">
+
+    </div>
+    <script>
+        
+        const inppass = document.getElementById("pw").value;
+        const confirmpass = document.getelementById("CPW").value;
+        function Check(){
+            console.log(inppass == confirmpass);
+        }
+
+    </script>
+    
+</body>
+</html>

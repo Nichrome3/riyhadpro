@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: cadetblue;
+        }
+        h1{
+            animation: textcolor 5s 5 2s;
+        }
+        @keyframes textcolor {
+            0%{
+                color: black;
+            }
+            20%{
+                color: aliceblue;
+            }
+            40%{
+                color: darkblue;
+            }
+            60%{
+                color: aliceblue;
+            }
+            80%{
+                color: darkblue;
+            }
+            100%{
+                color: black;
+            }
+        }
+        button{
+            width: 20%;
+            height: 40px;
+            color: #fff;
+            background-color: black;
+            border-radius: 30px;
+        }
+        button:hover{
+            background-color: blue;
+            transition: 2s;
+        }
+    </style>
+</head>
+<body>
+    <h1> Working on the console window of the browser using javascript </h1>
+    <button onclick="buttonfunc()">Try ME!</button>
+    <button onclick="Clickbuttonfunc()">Click me!</button>
+</body>
+<script>
+    console.log("I wrote this by interacting with the console of the browser using javascript")
+    function buttonfunc(){
+        alert("You just tried me")
+    }
+    function Clickbuttonfunc(){
+        window.prompt("Why did you click me")
+    }
+</script>
+</html>

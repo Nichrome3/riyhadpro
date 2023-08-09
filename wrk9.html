@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Checking Input </title>
+    <style>
+        body{
+            background-color: darkviolet;
+        }
+        h1{
+            color:aquamarine;
+            text-align: center;
+        }
+        .inp1{
+            height: 40px;
+            width: 30%;
+            margin-left: 450px;
+            margin-top: 60px;
+            color: darkblue;
+            font-size: 35px;
+        }
+        .btn{
+            width: 10%;
+            height: 100px;
+            border-radius: 100%;
+            background-color: aliceblue;
+            color: black;
+            font-size: 15px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            transition: 1s;
+        }
+        .btn:hover{
+            transform: rotateX(360)
+        }
+    </style>
+</head>
+<body>
+    <h1> Input anything in the textbox below to check whether it is a string or not </h1>
+    <input type="text" id="inp" class="inp1">
+    <label for="inp" id="label"> Result : </label>
+
+    <input type="button" value="Submit" class="btn" id="btn" onclick="func()">
+    <p id="result">  </p>
+    
+    <script>
+        
+        const txt1 = document.getElementById("inp");
+        const btn1 = document.getElementById("btn");
+        const out = document.getElementById("result");
+
+        function func(){
+            out.innerHTML = txt1.value;
+            var txt = txt1.value;
+            const text = [txt];
+
+            for(let i = 0;i < text.lenght; i++){
+                console.log(text[i]);
+            }
+        }
+
+
+    </script>
+</body>
+</html>
